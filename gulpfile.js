@@ -30,7 +30,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.src(['js/**/*.js', '!js/**/*.min.js'])
+gulp.src(['js/*.js', '!js/*.min.js'])
 
 gulp.task('uglify', function() {
     gulp.src(['./js/*.js', '!./js/*.min.js'])
