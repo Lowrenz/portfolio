@@ -1,7 +1,7 @@
 // JavaScript Document
 (function($) {
   "use strict";
-	// makes sure the whole site is loaded	
+	// makes sure the whole site is loaded
 	$(window).on('load', function() {
 		// will first fade out the loading animation
 		$(".throbber").fadeOut();
@@ -12,28 +12,28 @@
 				smoothScrolling: false,
 				mobileDeceleration: 0.004,
 				forceHeight: false
-			});	
+			});
 			// youtube video
 			$(".player").each(function(){
 				$(this).YTPlayer();
 			});
 		}
 		else{
-			$('html').addClass('no-Skrollr');			
+			$('html').addClass('no-Skrollr');
 			// animation
 			$("div").removeClass('animate');
-			
+
 			$(".player").each(function(){
 				$(this).addClass('player-background');
 			});
 			$('.section-video-controls').css({'display':'none'});
 		}
-		
+
 	})
-	
+
 	$(function() {
-		
-		
+
+
 		$("input,textarea").jqBootstrapValidation({
 			preventSubmit: true,
 			submitError: function($form, event, errors) {
@@ -106,7 +106,7 @@
 
 
 	jQuery(document).on('ready', function(){
-		
+
 		// browser check
 		var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
 		var is_explorer = navigator.userAgent.indexOf('MSIE') > -1 || navigator.appVersion.indexOf('Trident/') > 0 ;
@@ -114,31 +114,31 @@
 		var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 		var is_opera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;//navigator.userAgent.indexOf("Presto") > -1;
 		if ((is_chrome)&&(is_safari)) {is_safari=false;}
-		
+
 		if( is_safari ){
-			$('html').addClass('safari');	
+			$('html').addClass('safari');
 		}
 		else if( is_explorer ){
 			$('html').addClass('ie');
 		}
 		else if( is_firefox ){
-			$('html').addClass('firefox');	
+			$('html').addClass('firefox');
 		}
 		else if( is_opera ){
-			$('html').addClass('opera');	
+			$('html').addClass('opera');
 		}
 		else {
 			$('html').addClass('chrome');
 		}
-		
+
 		$('.animate').each(function () {
 			$(this).one('inview', function (e) {
 				$(this).addClass('animated').css('visibility', 'visible');
 			});
-		});		
-		
-		
-		// back to top			
+		});
+
+
+		// back to top
 		$('#back-to-top').fadeOut(duration);
 		var offset = 220;
 		var duration = 1000;
@@ -149,14 +149,14 @@
 				$('.back-to-top').fadeOut(duration);
 			}
 		});
-		
+
 		$('#back-to-top').on('click', function(event) {
 			event.preventDefault();
 			$('html, body').animate({scrollTop: 0}, duration);
 			return false;
 		})
-				
-		// page scroll		
+
+		// page scroll
 		$('.page-scroll a').on('click', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
@@ -168,12 +168,12 @@
 
 		 /**
 		 * This part handles the highlighting functionality.
-		 * We use the scroll functionality again, some array creation and 
+		 * We use the scroll functionality again, some array creation and
 		 * manipulation, class adding and class removing, and conditional testing
 		 */
 		var aChildren = $("nav li").children(); // find the a children of the list items
 		var aArray = []; // create the empty aArray
-		for (var i=0; i < aChildren.length; i++) {    
+		for (var i=0; i < aChildren.length; i++) {
 			var aChild = aChildren[i];
 			var ahref = $(aChild).attr('href');
 			aArray.push(ahref);
@@ -185,14 +185,14 @@
 			var docHeight = $(document).height();
 
 			for (var i=0; i < aArray.length; i++) {
-				var theID = aArray[i];	
-				
+				var theID = aArray[i];
+
 				var divPosid = $(theID);
 				if (!divPosid.length) {
 					return;
 				}
 				var divPos = divPosid.offset().top; // get the offset of the div from the top of page
-				
+
 				var divHeight = $(theID).height(); // get the height of the div in question
 				if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
 					$("a[href='" + theID + "']").addClass("active");
@@ -209,16 +209,16 @@
 				}
 			}
 		});
-		
+
 		$('.agni-slides').each(function(){
-			// super slider	
+			// super slider
 			if(!(/Android/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 				Hammer($(this)[0]).on("swipeleft", function(e) {
 					$(this).data('superslides').animate('next');
 				});
 				Hammer($(this)[0]).on("swiperight", function(e) {
 					$(this).data('superslides').animate('prev');
-				});	
+				});
 			}
 			$(this).superslides({
 				animation_speed: 700,
@@ -226,12 +226,12 @@
 				animation: 'slide',
 				pagination:true,
 				play: 0
-			});						
+			});
 			$(this).find('.slide-title').each(function(){
 				slideAnimation('.slide-title', 'fadeInDown');
-			})			
+			})
 		});
-		$('.agni-video').each(function(){		
+		$('.agni-video').each(function(){
 			/*Hammer($(this)[0]).on("swipeleft", function(e) {
 				$(this).data('superslides').animate('next');
 			});
@@ -242,10 +242,10 @@
 				animation_speed: 700,
 				animation: 'fade',
 				play: 7000
-				
+
 			});
 		});
-		
+
 		// text rotator
 		$('.text-rotator').each(function() {
 			$(this).find('.rotate').textrotator({
@@ -256,109 +256,109 @@
 
 		if( $('.header-navigation-menu.transparent-nav-menu').width() ){
 			var offset = 330; //$(window).height()-80;
-			$('.header-navigation-menu').each(function(){					
+			$('.header-navigation-menu').each(function(){
 				($(window).scrollTop() > offset)?$(this).removeClass('transparent-nav-menu'):$(this).addClass('transparent-nav-menu');
-			}) 				
-			$('.header-navigation-menu.change-style').each(function(){					
+			})
+			$('.header-navigation-menu.change-style').each(function(){
 				($(window).scrollTop() > offset)?$(this).removeClass('dynamic-nav-menu'):$(this).addClass('dynamic-nav-menu');
-						
-			}) 			
+
+			})
 			$(window).on('scroll', function() {
-				$('.header-navigation-menu').each(function(){					
-					($(window).scrollTop() > offset)?$(this).removeClass('transparent-nav-menu'):$(this).addClass('transparent-nav-menu');				
-				}) 				
-				$('.header-navigation-menu.change-style').each(function(){					
+				$('.header-navigation-menu').each(function(){
+					($(window).scrollTop() > offset)?$(this).removeClass('transparent-nav-menu'):$(this).addClass('transparent-nav-menu');
+				})
+				$('.header-navigation-menu.change-style').each(function(){
 					($(window).scrollTop() > offset)?$(this).removeClass('dynamic-nav-menu'):$(this).addClass('dynamic-nav-menu');
-				}) 						
+				})
 			});
 		}
-		
+
 		// tab-nav-menu
 		$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideUp(400);
 		$(".tab-nav-menu-content li:not('.menu-item-has-children') a, .toggle-nav-menu").on('click', function(m){
-			m.preventDefault();			
-			$('.toggle-nav-menu').find('.burg').toggleClass('activeBurg');		
+			m.preventDefault();
+			$('.toggle-nav-menu').find('.burg').toggleClass('activeBurg');
 		});
 		$('.toggle-nav-menu').on('click', function(m){
 			m.preventDefault();
-			
+
 			//$(this).find('.burg').toggleClass('activeBurg')
-			if ( $('.tab-nav-menu-content').is(':hidden') ) {		
+			if ( $('.tab-nav-menu-content').is(':hidden') ) {
 				$('.tab-nav-menu-content').slideDown(400);
 			}
 			else{
-				$('.tab-nav-menu-content').slideUp(400);				
+				$('.tab-nav-menu-content').slideUp(400);
 			}
-			if ( $('.fullscreen-nav-menu .tab-nav-menu-content').is(':hidden') ) {		
+			if ( $('.fullscreen-nav-menu .tab-nav-menu-content').is(':hidden') ) {
 				$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideDown(400);
 				$('.fullscreen-nav-menu .tab-nav-menu-content').fadeIn('slow');
 			}
 			else{
-				$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideUp(400);	
-				$('.fullscreen-nav-menu .tab-nav-menu-content').fadeOut('fast');				
+				$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideUp(400);
+				$('.fullscreen-nav-menu .tab-nav-menu-content').fadeOut('fast');
 			}
-					
+
 		});
 		$(".tab-nav-menu-content li:not('.menu-item-has-children') a").on('click', function(m){
 			//m.preventDefault();
-			
-			if ( $('.tab-nav-menu-content').is(':hidden') ) {		
+
+			if ( $('.tab-nav-menu-content').is(':hidden') ) {
 				$('.tab-nav-menu-content').slideDown(400);
 			}
 			else{
-				$('.tab-nav-menu-content').slideUp(400);			
+				$('.tab-nav-menu-content').slideUp(400);
 			}
-			if ( $('.fullscreen-nav-menu .tab-nav-menu-content').is(':hidden') ) {		
+			if ( $('.fullscreen-nav-menu .tab-nav-menu-content').is(':hidden') ) {
 				$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideDown(400);
 				$('.fullscreen-nav-menu .tab-nav-menu-content').fadeIn('slow');
 			}
 			else{
-				$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideUp(400);	
-				$('.fullscreen-nav-menu .tab-nav-menu-content').fadeOut('fast');				
+				$('.fullscreen-nav-menu .tab-nav-menu-content').parent('.tab-nav-menu').slideUp(400);
+				$('.fullscreen-nav-menu .tab-nav-menu-content').fadeOut('fast');
 			}
-					
+
 		});
-		
-		
-		// tablet menu		
-		$('.tab-nav-menu-content .menu-item-has-children >a').append("<a class=indicator href=#><i></i></a>");		
-		$('.tab-nav-menu-content .menu-item-has-children >a .indicator i').addClass("ion-ios-plus-empty");		
+
+
+		// tablet menu
+		$('.tab-nav-menu-content .menu-item-has-children >a').append("<a class=indicator href=#><i></i></a>");
+		$('.tab-nav-menu-content .menu-item-has-children >a .indicator i').addClass("ion-ios-plus-empty");
 		$('.tab-nav-menu-content .menu-item-has-children a.indicator').click(function(m){
 			m.preventDefault();
 			m.stopImmediatePropagation();
-			if ( $(this).parent(' a ').parent(' li ').children('.sub-menu').is(':hidden')  ) {		
+			if ( $(this).parent(' a ').parent(' li ').children('.sub-menu').is(':hidden')  ) {
 				$(this).parent(' a ').parent(' li ').children('.sub-menu').slideDown(400);
 			}
 			else
 			{
 				$(this).parent(' a ').parent(' li ').children('.sub-menu').slideUp(400);
-			}		
-			
-		});			
-		$(".nav-menu-content a").on('click', function(e){			
+			}
+
+		});
+		$(".nav-menu-content a").on('click', function(e){
 			$(this).addClass('active');
 			$(this).parent().siblings().find('a').removeClass('active');
 			return false;
 		});
 
 		$('.section-video-container').each(function() {
-			
+
 			$(this).siblings('div').find('.command-play').click(function(event) {
 				event.preventDefault();
-				$(this).parents('div').find("#bgndVideo-2").playYTP();	
-				$(this).css({'display':'none'});	
+				$(this).parents('div').find("#bgndVideo-2").playYTP();
+				$(this).css({'display':'none'});
 				$(this).siblings('.command-pause').css({'display':'block'});
 			})
 			$(this).siblings('div').find('.command-pause').click(function(event) {
 				event.preventDefault();
-				$(this).parents('div').find("#bgndVideo-2").pauseYTP();	
-				$(this).css({'display':'none'});	
+				$(this).parents('div').find("#bgndVideo-2").pauseYTP();
+				$(this).css({'display':'none'});
 				$(this).siblings('.command-play').css({'display':'block'});
-			})			
-			
+			})
+
 		});
-				
-		// milestone count		
+
+		// milestone count
 		$.fn.countUp = function( options ) {
 			$('.count').each( function() {
 				var defaults = {
@@ -368,25 +368,25 @@
 					duration: 1.5,
 					options: {
 						useEasing: true,
-						useGrouping: true 
+						useGrouping: true
 					}
 				},
 				options = $.extend({}, defaults, options);
 				var mile_count = new countUp( this, options.startVal, options.endVal, options.decimals, options.duration, options.options );
 				$(this).one("inview", function (e) {
 					mile_count.start();
-				})								
-			})		
+				})
+			})
 		};
 		$('.count').each( function() {
 			$(this).countUp();
 		});
-		
+
 		// portfolio magnific popup
 		$('.portfolio-page').each(function(){
 			$(this).magnificPopup({
 				delegate: '.portfolio-post:not(.filterhide) a.portfolio-single-link',
-				closeMarkup:'<div class="portfolio-navigation navigation"><div class="portfolio-nav-links container"><a title="%title%" href="#" class="mfp-close"><i class="ion-ios-close-empty mfp-close"></i></a></div></div>', 	//<i class="ion-android-close"></i>	
+				closeMarkup:'<div class="portfolio-navigation navigation"><div class="portfolio-nav-links container"><a title="%title%" href="#" class="mfp-close"><i class="ion-ios-close-empty mfp-close"></i></a></div></div>', 	//<i class="ion-android-close"></i>
 				closeOnBgClick:false,
 				closeBtnInside: true,
 				type: 'ajax',
@@ -399,37 +399,37 @@
 				preloader: true,
 				tLoading: '<div class="throbbers_loader"><div class="throbber"></div></div>',
 				gallery: {
-					enabled: true, 
-					preload: [0,2], 
+					enabled: true,
+					preload: [0,2],
 					navigateByImgClick: true,
 					arrowMarkup: '<a title="%title%" href="#" class="mfp-arrow mfp-arrow-%dir%"></a>', // markup of an arrow button
 
 					tPrev: 'Previous (Left arrow key)', // title for left button
 					tNext: 'Next (Right arrow key)', // title for right button
 					tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
-				},	
+				},
 				callbacks: {
 					beforeOpen: function() {
 						$('.portfolio-thumbnail').each(function(){
 							$(this).css({'overflow':'visible'});
 						});
 					},
-					
-					open: function(){						
-						$('.portfolio-navigation').hide();	
-						
+
+					open: function(){
+						$('.portfolio-navigation').hide();
+
 					},
-					close: function(){								
+					close: function(){
 					},
 					afterClose: function() {
 						$('.portfolio-thumbnail').each(function(){
 							$(this).css({'overflow':'hidden'});
 						});
-					},			
+					},
 					parseAjax: function(mfpResponse) {
 						mfpResponse.data = $(mfpResponse.data).find('.portfolio-single-content');
 					},
-					ajaxContentAdded: function() {	
+					ajaxContentAdded: function() {
 						$('.portfolio-navigation').delay(500).show(500);
 						$('.portfolio-navigation').children('.portfolio-nav-links').prepend(this.arrowLeft);
 						$('.portfolio-navigation').children('.portfolio-nav-links').append(this.arrowRight);
@@ -437,12 +437,12 @@
 							$(this).find('a').click(function(c){
 								c.preventDefault();
 							})
-						});	
+						});
 						$('.post-sharing-buttons').each(function(){
 							$(this).find('a').click(function(s){
 								s.preventDefault();
 								newPopup($(this).attr('href'));
-							})		
+							})
 						});
 						$('.custom-slider').each(function(){
 							$(this).owlCarousel({
@@ -470,7 +470,7 @@
 			zoom: {
 				enabled: true, // By default it's false, so don't forget to enable it
 				duration: 300, // duration of the effect, in milliseconds
-				easing: 'ease-in-out' // CSS transition easing function 
+				easing: 'ease-in-out' // CSS transition easing function
 			}
 		});
 		$('.custom-gallery').each(function() { // the containers for all your galleries
@@ -488,26 +488,26 @@
 				zoom: {
 					enabled: true, // By default it's false, so don't forget to enable it
 					duration: 300, // duration of the effect, in milliseconds
-					easing: 'ease-in-out' // CSS transition easing function 
+					easing: 'ease-in-out' // CSS transition easing function
 				}
 			})
 		});
-		
-		// portfolio isotope & filter 			
+
+		// portfolio isotope & filter
 		$("#filters a").on('click', function(e){
 			e.preventDefault();
 			$(this).addClass('active');
 			$(this).parent().siblings().find('a').removeClass('active');
 			return false;
 		});
-		
-		var $portfolio_container = $('.portfolio-page');		
+
+		var $portfolio_container = $('.portfolio-page');
 		$('.filter a').on('click', function(){
 			var selector = $(this).attr('data-filter');
-			$portfolio_container.isotope({ 
+			$portfolio_container.isotope({
 				itemSelector: '.portfolio-thumbnail',
 				filter: selector
-				
+
 			});
 			$('.portfolio-thumbnail').each(function(){
 				if( !$(this).hasClass(selector.replace(".", ""))){
@@ -516,16 +516,16 @@
 				else{
 					$(this).removeClass('filterhide');
 				}
-			
-			});			
-			return false;  
-		});		
-		
+
+			});
+			return false;
+		});
+
 		$portfolio_container.isotope();
 		$portfolio_container.imagesLoaded(function() {
 			$portfolio_container.isotope('layout');
-		});		
-				
+		});
+
 		// progress bar
 		$('.progress-bar-animate').each(function(){
 			if( $(this).attr('role') == 'progressbar' ){
@@ -534,8 +534,8 @@
 				});
 			}
 		});
-		
-		// Custom Slider	
+
+		// Custom Slider
 		$('.custom-slider').each(function() {
 			$(this).owlCarousel({
 				autoplay : true,
@@ -545,11 +545,11 @@
 				dots : false,
 				items:1,
 				nav:true,
-				navText: ['<i class="ion-ios-arrow-left small-icon">','<i class="ion-ios-arrow-right small-icon">']			
+				navText: ['<i class="ion-ios-arrow-left small-icon">','<i class="ion-ios-arrow-right small-icon">']
 			})
 		});
-		
-		// carousel clients		
+
+		// carousel clients
 		$('.carousel-clients').each(function() {
 			$(this).owlCarousel({
 				autoplay : true,
@@ -569,11 +569,11 @@
 					1200:{
 						items:4
 					}
-				}			
+				}
 			})
 		});
-		
-		// carousel team	
+
+		// carousel team
 		$('.carousel-team').each(function() {
 			$(this).owlCarousel({
 				autoplay : true,
@@ -594,10 +594,10 @@
 					1200:{
 						items:2
 					}
-				}			
+				}
 			})
-		});	
-		// carousel team	
+		});
+		// carousel team
 		$('.carousel-team-2').each(function() {
 			$(this).owlCarousel({
 				autoplay : true,
@@ -618,33 +618,33 @@
 					1200:{
 						items:3
 					}
-				}			
+				}
 			})
-		});	
-		
-		// carousel testimonials	
+		});
+
+		// carousel testimonials
 		$('.carousel-testimonials').each(function() {
 			$(this).owlCarousel({
 				autoplay : true,
-				autoplayTimeout:4000, 
+				autoplayTimeout:4000,
 				smartSpeed:700,
 				dots :false,
 				loop:true,
 				items:1
-			
+
 			})
-		});	
-		
+		});
+
 		$('.blog-masonry').each(function(){
 			var $container = $(this).imagesLoaded( function() {
 				$container.isotope({
 					itemSelector: '.blog-content',
 					layoutMode: 'masonry'
 				})
-			})		
+			})
 		});
-			
-		
+
+
 		$('.post-details').each(function(){
 			$(this).on({
 				mouseenter: function(){
@@ -655,36 +655,36 @@
 				}
 			})
 		});
-		
+
 		$('.post-sharing-buttons').each(function(){
 			$(this).find('a').on('click', function(s){
 				s.preventDefault();
 				newPopup($(this).attr('href'));
-			})		
+			})
 		});
-		
+
 		// Contact form
-		
+
 		$("body").on("input propertychange", ".floating-label-form-group", function(e) {
 			$(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
 		}).on("focus", ".floating-label-form-group", function() {
 			$(this).addClass("floating-label-form-group-with-focus");
 		}).on("blur", ".floating-label-form-group", function() {
 			$(this).removeClass("floating-label-form-group-with-focus");
-		});		
-		
-		
-		if( $('#map_canvas').width() ){	
+		});
+
+
+		if( $('#map_canvas').width() ){
 			// google map
 			var mapstyle = $("#map_canvas").attr("data-map-style");
-			
+
 			var get_lat = '50.958618';
 			var get_lng = '4.349209';
 			var get_add1 ='Low_res';
 			var get_add2 ='Eversemsesteenweg 59, 1852 Grimbergen, Belgium';
 			var get_add3 ='+32 479 48 65 32';
             var get_add4 ='Click here to get directions on Google Maps';
-			
+
 			var lat=get_lat;   // Latitude of location
 			var lang=get_lng;  // Longitude  of location
 			var desc='<div>'+
@@ -695,10 +695,10 @@
 					 '</div>';
 			var showImage='img/marker.png';
 			var imageTitle=get_add1;
-			var divId='map_canvas';			
-			initializeMap(lat,lang,desc,showImage,imageTitle,divId,mapstyle);					
+			var divId='map_canvas';
+			initializeMap(lat,lang,desc,showImage,imageTitle,divId,mapstyle);
 		}
-		
+
 	});
 
 })(jQuery);
@@ -706,18 +706,18 @@ function slideAnimation(element, animation){
 	$element = $(element);
 	$(document).on('animating.slides',
 		function() {
-			$element.addClass('animate');   
+			$element.addClass('animate');
 			window.setTimeout( function(){
 				$element.removeClass('animate');
-			}, 900);       
+			}, 900);
 		}
 	);
 	$(document).on('animated.slides',
 		function() {
-			$element.addClass('animated ' + animation);   
+			$element.addClass('animated ' + animation);
 			window.setTimeout( function(){
 				$element.removeClass('animated');
-			}, 1000);       
+			}, 1000);
 		}
 	);
 }
@@ -733,29 +733,29 @@ function initializeMap(lat,lang,desc,showImage,imageTitle,divId,mapstyle) {
 		var styles = [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}];
 	}
 	else{
-		var styles = [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]; 
+		var styles = [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}];
 	}
 	var latlng = new google.maps.LatLng(lat,lang);
-	
+
     var isDraggable = $(document).width() > 480 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
-    
+
     var settings = {
 		zoom: 16,
 		center: latlng,
 		mapTypeControl: false,
 		scrollwheel: false,
 		draggable: true,
-		mapTypeControlOptions: {  
-			mapTypeIds: ['Styled']  
-		},    
+		mapTypeControlOptions: {
+			mapTypeIds: ['Styled']
+		},
 		navigationControl: true,
 		navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-		mapTypeId: 'Styled', 
+		mapTypeId: 'Styled',
 	};
 	var map = new google.maps.Map(document.getElementById(divId), settings);
-	var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });  
-    map.mapTypes.set('Styled', styledMapType);  
-	
+	var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+    map.mapTypes.set('Styled', styledMapType);
+
 	var contentString = desc;
 	var infowindow = new google.maps.InfoWindow({
 		content: contentString
