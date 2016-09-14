@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task('imagemin', function() {
     return gulp.src('./img/**/**/*')
@@ -36,6 +37,12 @@ gulp.task('uglify', function() {
     gulp.src(['./js/*.js', '!./js/*.min.js'])
         .pipe(uglify('main.js'))
         .pipe(gulp.dest('./js'))
+});
+
+gulp.task('minify-html', function() {
+  return gulp.src('./html/**/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', function() {
