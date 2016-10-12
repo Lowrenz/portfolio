@@ -44,3 +44,5 @@ Thumbs.db
 node_modules
 #themes/custom/*/js/*.js
 #themes/custom/*/css
+wordpress
+wordpress/*

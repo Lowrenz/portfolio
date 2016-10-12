@@ -1,77 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
-            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://www.lorenzgillisjans.com/</loc>
-  <changefreq>monthly</changefreq>
+  <lastmod>2016-09-16T11:25:57+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/cuberdonplan.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/cuberdonplan</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/desse.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/desse</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/center.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/center</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/reseller.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/reseller</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/cuberdonshop.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/cuberdonshop</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/hapklaar.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/hapklaar</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/theydrawandcook.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/theydrawandcook</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/moto360.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/moto360</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/weather.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/weather</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/cthulhu.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/cthulhu</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/iserve.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/iserve</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/pixel-art.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/pixel-art</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.lorenzgillisjans.com/work/laura.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://www.lorenzgillisjans.com/work/laura</loc>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzgillisjans.com/blog/a-new-hope.html</loc>
-  <changefreq>monthly</changefreq>
+  <lastmod>2016-09-14T07:00:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzgillisjans.com/documents/Lorenz-Gillisjans-CV.pdf</loc>
-  <changefreq>monthly</changefreq>
+  <lastmod>2016-09-12T20:22:53+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzgillisjans.com/documents/Pitch_Beirut.pdf</loc>
-  <changefreq>monthly</changefreq>
+  <lastmod>2016-09-12T20:22:54+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
 </url>
 </urlset>
