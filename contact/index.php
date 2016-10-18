@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin: https://www.lorenzgillisjans.com');
+header('Access-Control-Allow-Origin: https://lorenzgillisjans.com');
 
 require '../vendor/autoload.php';
 use Mailgun\Mailgun;
