@@ -48,7 +48,8 @@ gulp.task('minify-html', function() {
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch(['./js/*.js', '!./js/*.min.js'], ['uglify']);
+    //gulp.watch(['./js/*.js', '!./js/*.min.js'], ['uglify']);
+    gulp.watch(['./html/**/*.html'], ['minify-html']);
     gulp.watch(['./css/style.css', './js/*.js'], function(files) {
         livereload.changed(files)
     });

@@ -68,3 +68,52 @@ section i{
 .link:hover{
     cursor: pointer;
 }
+
+.slide-container{
+	z-index: 50 !important;
+}
+
+.reveal-btn{
+	&:hover{
+		background-color: #9C27B0 !important;
+		border: 2px solid transparent;
+	}
+}
+.homepage-hero-module, #agni-slides{
+	background-color: white;
+}
+.header-navigation-menu{
+	z-index: 199;
+}
+
+.video-container .filter{
+	display: none;
+}
+
+.video-container{
+	margin-top: -160px !important;
+	@media screen and (max-width: 768px){
+		margin-top: -130px !important;
+	}
+	@media screen and (max-width: 450px){
+		margin-top: -105px !important;
+	}
+}
+
+video{
+	background-color: white;
+	object-fit: cover;
+	object-position: center;
+	top: 0;
+	height: 100%;
+}
+
+.homepage-hero-module,  #about, #services, #skills, #who, #works, #client, #blog, #contact, #contact-bar{
+	margin: 80px !important;
+	@media screen and (max-width: 768px){
+		margin: 50px !important;
+	}
+	@media screen and (max-width: 450px){
+		margin: 25px !important;
+	}
+}

@@ -12,7 +12,7 @@
 		overflow-x:hidden;
 		word-wrap: break-word;
 	}
-	
+
 	.agni-slides .slide-content p {
 		font-size: 45px;
 	}
@@ -33,7 +33,7 @@
 		padding: 10px 36px;
 		font-size:13px;
 		margin-top:15px;
-	}	
+	}
 	.page-header-title{
 		font-size:36px;
 	}
@@ -44,16 +44,16 @@
 }
 
 
-@media (max-width: 991px) {	
-	
+@media (max-width: 991px) {
+
 	.toggle-nav-menu{
 		display: inline-block;
 	}
 	.nav-menu{
 		display:none;
 	}
-	
-	
+
+
 	.tab-nav-menu, .tab-nav-menu a{
 		display:block;
 	}
@@ -86,17 +86,17 @@
 		font-size:12px;
 		margin-top:10px;
 	}
-	
+
 	.page-header-title{
 		font-size:24px;
 	}
 	.page-header-additional-text {
 		font-size: 14px;
 	}
-	
-	.about-4_bg , .about_bg, .service-3_bg, .service-2_bg, .skills_bg, .client_bg{
-		background-image:none;
-	}	
+
+	.about-4_bg , .about_bg, .service-3_bg, .service-2_bg, .skills_bg, .client_bg, .about-4_bg[style] , .about_bg[style], .service-3_bg[style], .service-2_bg[style], .skills_bg[style], .client_bg[style]{
+		background-image:none !important;
+	}
 	.clients {
 		margin-right: 0;
 	}
@@ -109,8 +109,8 @@
 	}
 }
 
-@media (max-width: 767px) {	
-	
+@media (max-width: 767px) {
+
 	.header-navigation-menu{
 		min-height:60px;
 	}
@@ -134,7 +134,7 @@
 		line-height:60px;
 	}
 	.tab-nav-menu-content li a{
-		font-size:14px;	
+		font-size:14px;
 	}
 	.tab-nav-menu-content li a.indicator{
 		font-size:18px;
@@ -152,7 +152,7 @@
 	.burg {
 		margin: 19px 0 18px 5px;
 	}
-	
+
 	.slide-container {
 		width: 100%;
 	}
@@ -171,7 +171,7 @@
 	.page-header-additional-text {
 		font-size: 13px;
 	}
-	
+
 	.service-2-icon {
 		width: 80px;
 		padding-right: 10px
@@ -189,7 +189,7 @@
 	}
 	.member-caption-2 {
 		padding:20px;
-	}	
+	}
 	.post-thumbnail img {
 		width: 200%;
 	}
