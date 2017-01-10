@@ -1878,12 +1878,12 @@ section i{
         text-align: center;
     }
     .list-inline li{
-        margin-bottom: 40px;
-        width: 48%;
+			margin-bottom: 40px !important;
+			width: 100%;
     }
 
     .nav-tabs li{
-        font-size: 24px;
+        font-size: 22px;
         width: 100%;
         text-align: center;
     }
