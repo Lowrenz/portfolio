@@ -1794,7 +1794,7 @@ section i{
 	background-position:center bottom;
 }
 .about-4_bg{
-	//background-image:url(../img/about-4_bg.jpg);
+	background-image:none;
 	background-size:cover;
 	background-position:center bottom;
 }
@@ -1856,6 +1856,7 @@ section i{
 
 .portfolio-filter{
 	margin-bottom:80px;
+	display: none;
 }
 .portfolio-filter li{
 	padding-right:20px;
@@ -2016,7 +2017,7 @@ a::-moz-focus-inner {
 	opacity:0.4;
 }
 .client_bg{
-	background-image:url(../img/client_bg.jpg);
+	background-image:none;
 	background-size:100% auto;
 	background-position:center;
 }
@@ -2095,7 +2096,7 @@ a::-moz-focus-inner {
 --------------------
 */
 .skills_bg{
-	background-image:url(../img/skills_bg.jpg);
+	background-image:none;
 	background-size:cover;
 	background-position:center bottom;
 }
@@ -2135,7 +2136,7 @@ a::-moz-focus-inner {
 }
 
 .service-3_bg{
-	background-image:url(../img/service-3_bg.jpg);
+	background-image:none;
 	background-size:cover;
 	background-position:center bottom;
 }

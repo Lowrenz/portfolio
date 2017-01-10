@@ -88,32 +88,33 @@
                         contentEl.style.opacity = 1;
                     }
                 }
-            })/*,
+            }),
 
-            scrollElemToWatch_2 = document.getElementById('rev-6'),
+            scrollElemToWatch_2 = document.getElementById('services'),
             watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -300),
             rev6 = new RevealFx(scrollElemToWatch_2, {
                 revealSettings: {
                     bgcolor: '#fcf652',
+                    direction: 'rl',
                     onCover: function(contentEl, revealerEl) {
                         contentEl.style.opacity = 1;
                     }
                 }
             }),
-            rev7 = new RevealFx(document.querySelector('#rev-7'), {
+            rev7 = new RevealFx(document.querySelector('#services .col-sm-12 .section-heading'), {
                 revealSettings: {
                     bgcolor: '#7f40f1',
-                    direction: 'rl',
+                    direction: 'lr',
                     delay: 250,
                     onCover: function(contentEl, revealerEl) {
                         contentEl.style.opacity = 1;
                     }
                 }
             }),
-            rev8 = new RevealFx(document.querySelector('#rev-8'), {
+            rev8 = new RevealFx(document.querySelector('.service-3 #tab1'), {
                 revealSettings: {
-                    bgcolor: '#7f40f1',
-                    direction: 'rl',
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
                     delay: 500,
                     onCover: function(contentEl, revealerEl) {
                         contentEl.style.opacity = 1;
@@ -121,7 +122,7 @@
                 }
             }),
 
-            scrollElemToWatch_3 = document.getElementById('rev-9'),
+            scrollElemToWatch_3 = document.getElementById('skills'),
             watcher_3 = scrollMonitor.create(scrollElemToWatch_3, -300),
             rev9 = new RevealFx(scrollElemToWatch_3, {
                 revealSettings: {
@@ -132,7 +133,209 @@
                     }
                 }
             }),
-            rev10 = new RevealFx(document.querySelector('#rev-10'), {
+            rev10 = new RevealFx(document.querySelector('#skills .col-sm-12'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+
+            scrollElemToWatch_4 = document.getElementById('works'),
+            watcher_4 = scrollMonitor.create(scrollElemToWatch_4, -300),
+            rev11 = new RevealFx(scrollElemToWatch_4, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev12 = new RevealFx(document.querySelector('#works .heading'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev13 = new RevealFx(document.querySelector('#works .additional-heading'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_5 = document.getElementById('portfolio-page'),
+            watcher_5 = scrollMonitor.create(scrollElemToWatch_5, -300),
+            rev14 = new RevealFx(scrollElemToWatch_5, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev15 = new RevealFx(document.querySelector('#portfolio-11'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev16 = new RevealFx(document.querySelector('#portfolio-12'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev17 = new RevealFx(document.querySelector('#portfolio-13'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_6 = document.getElementById('portfolio-13'),
+            watcher_6 = scrollMonitor.create(scrollElemToWatch_6, -300),
+            rev18 = new RevealFx(document.querySelector('#portfolio-16'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev19 = new RevealFx(document.querySelector('#portfolio-14'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_7 = document.getElementById('portfolio-17'),
+            watcher_7 = scrollMonitor.create(scrollElemToWatch_7, -300),
+            rev20 = new RevealFx(document.querySelector('#portfolio-17'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev21 = new RevealFx(document.querySelector('#portfolio-15'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_8 = document.getElementById('portfolio-22'),
+            watcher_8 = scrollMonitor.create(scrollElemToWatch_8, -300),
+            rev22 = new RevealFx(document.querySelector('#portfolio-21'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev23 = new RevealFx(document.querySelector('#portfolio-22'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev24 = new RevealFx(document.querySelector('#portfolio-23'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_9 = document.getElementById('portfolio-19'),
+            watcher_9 = scrollMonitor.create(scrollElemToWatch_9, -300),
+            rev25 = new RevealFx(document.querySelector('#portfolio-18'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev26 = new RevealFx(document.querySelector('#portfolio-19'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev27 = new RevealFx(document.querySelector('#portfolio-20'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_10 = document.getElementById('who'),
+            watcher_10 = scrollMonitor.create(scrollElemToWatch_10, -300),
+            rev28 = new RevealFx(scrollElemToWatch_10, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev29 = new RevealFx(document.querySelector('#who .big-heading'), {
                 revealSettings: {
                     bgcolor: '#7f40f1',
                     delay: 250,
@@ -141,7 +344,7 @@
                     }
                 }
             }),
-            rev11 = new RevealFx(document.querySelector('#rev-11'), {
+            rev30 = new RevealFx(document.querySelector('#who p'), {
                 revealSettings: {
                     bgcolor: '#7f40f1',
                     delay: 500,
@@ -149,29 +352,250 @@
                         contentEl.style.opacity = 1;
                     }
                 }
-            })*/;
+            }),
+            scrollElemToWatch_11 = document.getElementById('client'),
+            watcher_11 = scrollMonitor.create(scrollElemToWatch_11, -300),
+            rev31 = new RevealFx(scrollElemToWatch_11, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_12 = document.getElementById('blog'),
+            watcher_12 = scrollMonitor.create(scrollElemToWatch_12, -200),
+            /*rev32 = new RevealFx(scrollElemToWatch_12, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),*/
+            rev33 = new RevealFx(document.querySelector('#blog .heading.black'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev34 = new RevealFx(document.querySelector('#blog .additional-heading'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_13 = document.getElementById('contact-bar'),
+            watcher_13 = scrollMonitor.create(scrollElemToWatch_13, -300),
+            rev35 = new RevealFx(scrollElemToWatch_13, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev36 = new RevealFx(document.querySelector('#queries'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev37 = new RevealFx(document.querySelector('#call'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev38 = new RevealFx(document.querySelector('#office'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 750,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            scrollElemToWatch_14 = document.getElementById('contact'),
+            watcher_14 = scrollMonitor.create(scrollElemToWatch_14, -300),
+            rev39 = new RevealFx(scrollElemToWatch_14, {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'rl',
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev40 = new RevealFx(document.querySelector('#map_canvas'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 250,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev41 = new RevealFx(document.querySelector('#contact .heading'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 500,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev42 = new RevealFx(document.querySelector('#contact .additional-heading'), {
+                revealSettings: {
+                    bgcolor: '#7f40f1',
+                    direction: 'lr',
+                    delay: 750,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            }),
+            rev43 = new RevealFx(document.querySelector('#contactForm'), {
+                revealSettings: {
+                    bgcolor: '#fcf652',
+                    direction: 'lr',
+                    delay: 750,
+                    onCover: function(contentEl, revealerEl) {
+                        contentEl.style.opacity = 1;
+                    }
+                }
+            });
 
         watcher_1.enterViewport(function() {
             rev3.reveal();
-            setTimeout(function(){
-              $(".about_bg").css("background-image","url(https://lorenzgillisjans.com/img/about_bg.jpg)");
-            },200);
+            setTimeout(function() {
+                $(".about_bg").css("background-image", "url(https://lorenzgillisjans.com/img/about_bg.jpg)");
+            }, 200);
             rev4.reveal();
             rev5.reveal();
             watcher_1.destroy();
         });
-        /*watcher_2.enterViewport(function() {
+        watcher_2.enterViewport(function() {
             rev6.reveal();
+            setTimeout(function() {
+                $(".service-3_bg").css("background-image", "url(https://lorenzgillisjans.com/img/service-3_bg.jpg)");
+            }, 200);
             rev7.reveal();
             rev8.reveal();
             watcher_2.destroy();
         });
         watcher_3.enterViewport(function() {
             rev9.reveal();
+            setTimeout(function() {
+                $(".skills_bg").css("background-image", "url(https://lorenzgillisjans.com/img/skills_bg.jpg)");
+            }, 200);
             rev10.reveal();
-            rev11.reveal();
             watcher_3.destroy();
-        });*/
+        });
+
+        watcher_4.enterViewport(function() {
+            rev11.reveal();
+            rev12.reveal();
+            rev13.reveal();
+            watcher_4.destroy();
+        });
+
+        watcher_5.enterViewport(function() {
+            rev14.reveal();
+            rev15.reveal();
+            rev16.reveal();
+            rev17.reveal();
+            watcher_5.destroy();
+        });
+
+        watcher_6.enterViewport(function() {
+            rev18.reveal();
+            rev19.reveal();
+            watcher_6.destroy();
+        });
+
+        watcher_7.enterViewport(function() {
+            rev20.reveal();
+            rev21.reveal();
+            watcher_7.destroy();
+        });
+
+        watcher_8.enterViewport(function() {
+            rev22.reveal();
+            rev23.reveal();
+            rev24.reveal();
+            watcher_8.destroy();
+        });
+
+        watcher_9.enterViewport(function() {
+            rev25.reveal();
+            rev26.reveal();
+            rev27.reveal();
+            watcher_9.destroy();
+        });
+
+        watcher_10.enterViewport(function() {
+            rev28.reveal();
+            setTimeout(function() {
+                $(".about-4_bg").css("background-image", "url(https://lorenzgillisjans.com/img/about-4_bg.jpg)");
+            }, 200);
+            rev29.reveal();
+            rev30.reveal();
+            watcher_10.destroy();
+        });
+
+        watcher_11.enterViewport(function() {
+            rev31.reveal();
+            setTimeout(function() {
+                $(".client_bg").css("background-image", "url(https://lorenzgillisjans.com/img/client_bg.jpg)");
+            }, 200);
+            watcher_11.destroy();
+        });
+
+        watcher_12.enterViewport(function() {
+            //rev32.reveal();
+            rev33.reveal();
+            rev34.reveal();
+            watcher_12.destroy();
+        });
+
+        watcher_13.enterViewport(function() {
+            rev35.reveal();
+            rev36.reveal();
+            rev37.reveal();
+            rev38.reveal();
+            watcher_13.destroy();
+        });
+
+        watcher_14.enterViewport(function() {
+            rev39.reveal();
+            rev40.reveal();
+            rev41.reveal();
+            rev42.reveal();
+            rev43.reveal();
+            watcher_14.destroy();
+        });
 
         // Activate!!
         setTimeout(initReveal(), 500);
