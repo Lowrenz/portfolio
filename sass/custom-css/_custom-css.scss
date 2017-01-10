@@ -23,6 +23,12 @@
 	opacity:0.4;
 }
 
+body{
+	margin: 0px;
+	width: 100%;
+	max-width: 100%;
+	float: left;
+}
 
 /* Default color */
 body, pre, .btn:hover, .btn:focus, .btn.focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-white, .btn-default.btn-alt, .btn-white.btn-alt:hover, .btn-white.btn-alt:focus {
@@ -110,10 +116,31 @@ video{
 
 .homepage-hero-module,  #about, #services, #skills, #who, #works, #blog{
 	margin: 80px !important;
+	width: calc(100% - 160px);
+	@media screen and (max-width: 768px){
+		margin: 0px !important;
+		width: 100%;
+	}
+	@media screen and (max-width: 450px){
+		margin: 25px !important;
+		width: calc(100% - 50px);
+	}
+}
+
+#about, #skills, #who{
+	@media screen and (max-width: 768px){
+		float: left;
+	}
+	@media screen and (max-width: 450px){
+		//margin: 25px !important;
+	}
+}
+/*
+#client{
 	@media screen and (max-width: 768px){
 		margin: 50px !important;
 	}
 	@media screen and (max-width: 450px){
 		margin: 25px !important;
 	}
-}
+}*/
