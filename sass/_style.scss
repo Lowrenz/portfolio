@@ -2018,8 +2018,14 @@ a::-moz-focus-inner {
 }
 .client_bg{
 	background-image:none;
-	background-size:100% auto;
-	background-position:center;
+	background-size: cover;
+	background-position: center center;
+	left: 0;
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-repeat: no-repeat;
 }
 .clients{
 	margin-left:0;

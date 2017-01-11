@@ -144,3 +144,15 @@ video{
 		margin: 25px !important;
 	}
 }*/
+
+@media screen and (min-width: 992px){
+	#who{
+		.col-md-offset-7 {
+		    margin-left: 52.333333%;
+		}
+	}
+}
+
+#blog .section-heading.container {
+    padding-left: 0px;
+}
