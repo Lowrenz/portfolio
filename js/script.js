@@ -509,6 +509,15 @@
             rev9.reveal();
             setTimeout(function() {
                 $(".skills_bg").css("background-image", "url(https://lorenzgillisjans.com/img/skills_bg.jpg)");
+                $(".progress-bar-animate").each(function() {
+                    if (b(this).attr("role") == "progressbar") {
+                        b(this).one("inview", function(c) {
+                            b(this).css({
+                                width: b(this).attr("aria-valuenow") + "%"
+                            })
+                        })
+                    }
+                });
             }, 200);
             rev10.reveal();
             watcher_3.destroy();
@@ -1020,7 +1029,7 @@
         K.imagesLoaded(function() {
             K.isotope("layout")
         });
-        b(".progress-bar-animate").each(function() {
+        /*b(".progress-bar-animate").each(function() {
             if (b(this).attr("role") == "progressbar") {
                 b(this).one("inview", function(c) {
                     b(this).css({
@@ -1028,7 +1037,7 @@
                     })
                 })
             }
-        });
+        });*/
         b(".custom-slider").each(function() {
             b(this).owlCarousel({
                 autoplay: true,
