@@ -655,11 +655,15 @@ ul.nav-menu-content li:hover > ul,
 .page-header_blog_bg{
 	background-image:url('../img/blog/a-new-hope.jpg');
 	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	height:420px;
 }
 .page-header_portfolio_bg{
 	background-image:url('../img/portfolio_single_31.jpg');
 	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	height:420px;
 }
 
@@ -960,7 +964,7 @@ strong.primary-typo, .primary-typo.strong{
 	bottom: 0px;
 	width: 100%;
 	background-color:#000;
-	opacity:0.6;
+	opacity:0.4;
 }
 .overlay.lite{
 	background-color:#fff;
